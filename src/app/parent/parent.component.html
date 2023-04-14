@@ -1,0 +1,9 @@
+<div>
+  <inst-child (sendGradeEvent)="getGrade($event)" />
+  <hr />
+  <div *ngFor="let el of grades; index as i; count as count; even as even">
+    <h5>{{ i }}- {{ el }}</h5>
+    <p>Count-{{ count }}</p>
+    <p>Even-{{ even }}</p>
+  </div>
+</div>
